@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product Calculator</title>
+</head>
+<body>
+
+    <h2>Product of Two Numbers</h2>
+
+    <form method="POST">
+        <label>Enter first number:</label>
+        <input type="number" name="num1" step="any" required>
+
+        <br><br>
+
+        <label>Enter second number:</label>
+        <input type="number" name="num2" step="any" required>
+
+        <br><br>
+
+        <button type="submit">Calculate Product</button>
+    </form>
+
+    {% if result is not none %}
+        <h3>Product = {{ result }}</h3>
+    {% endif %}
+
+</body>
+</html>
